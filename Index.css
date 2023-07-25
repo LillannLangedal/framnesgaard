@@ -1,0 +1,120 @@
+/*Base dekor for alle sider*/
+
+*{box-sizing: border-box}
+
+body{
+    background-color: rgb(241,233,232); 
+    color:#0F2F16 ; 
+    font-family:Verdana;
+    font-size: large;
+    line-height: 180%;
+}  
+.overskrift{
+ text-align: center;   
+ font-size: x-large;
+ font-weight: bolder;
+ color:#637e63;
+}
+
+/*Utseende for navbar*/
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:#637e63 ; 
+  text-decoration: none;
+  width: 20%; 
+  text-align: center;
+  font-weight: bolder;
+}
+.navbar a:hover {
+ color: blue;}
+
+@media screen and (max-width: 750px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 80%;
+    text-align: left;
+  }
+
+}
+/*Bilder startside*/
+.container{
+    width: 60%;
+    padding:20px;
+    margin:100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;}
+ 
+.box{
+    width: 250px;
+    height: 250px;
+    margin:0 10px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+    transition: 1s; 
+}
+
+.box img{
+    display: block;
+    width:250px;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.box:hover{
+    transform:scale(1.5);
+    z-index:2 ;
+}
+
+.info{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  
+}
+.kart{
+ text-align: center;
+}
+
+/*Om oss*/
+.OmOss{
+  padding-left: 8%;
+  padding-right: 8%;
+  text-align: center;
+}
+
+/*Tilbud*/
+.tilbud{
+  background-color:#D1E4C3;
+  text-align: center; 
+  border-style: dashed;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 4%;
+  gap:4%;
+}
+
+/*Kontakt oss */
+.KontaktOss{ 
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 4%;
+  gap:4%;
+  text-align: center;
+}
+
+.KontaktOss input{
+  width: 300px;
+}
+#skrivHer{
+  width: 300px;
+  height:150px ;
+}
